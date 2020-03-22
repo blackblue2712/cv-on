@@ -4,6 +4,21 @@
     --main-text-color: #ffffff;
 }
 
+*::-webkit-scrollbar {
+    width: .6em;
+    
+  }
+  *::-webkit-scrollbar,
+  *::-webkit-scrollbar-thumb {
+    overflow:visible;
+    border-radius: 4px;
+    
+  }
+  *::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,.6); 
+  }
+  
+
 html
 {
  scroll-behavior:smooth
@@ -338,7 +353,7 @@ footer a:hover i {
 
 #scroll-up {
     position: fixed;
-    right: 30px;
+    right: 1%;
     bottom: 30px;
     display: none;
 }
@@ -370,5 +385,104 @@ footer a:hover i {
     100% {
         margin-top: -128px;
         opacity: 1;
+    }
+}
+
+/* RESPONSIVE */
+#tab-responsive {
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    right: 1%;
+    transform: translate(0, -50%);
+    display: none;
+}
+
+#tab-responsive a {
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+@media screen and (max-width: 745px) {
+    header .container {
+        margin: 0;
+    }
+    .timeline::after {
+        left: 31px;
+    }
+
+    .contain {
+        width: 100% !important;
+        padding-left: 70px !important;
+        padding-right: 25px !important;
+    }
+
+    .contain::before {
+        left: 60px !important;
+        border: medium solid white !important;
+        border-width: 10px 10px 10px 0 !important;
+        border-color: transparent white transparent transparent !important;
+    }
+
+    .contain.left::after, .contain.right::after {
+        left: 15px !important;
+    }
+
+    .contain.right {
+        left: 0% !important;
+    }
+
+}
+
+@media screen and (max-width: 682px) {
+    .hd-right {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .text-resume {
+        font-size: 2.5rem;
+    }
+}
+@media screen and (max-width: 428px) {
+    .text-resume {
+        font-size: 2rem;
+    }
+    .timeline::after {
+        content: none
+    }
+    .timeline .contain {
+        padding: 0 !important;
+    }
+    .timeline .contain.left::before, .timeline .contain.right::before {
+        content: none;
+    }
+    .timeline .contain.left::after, .timeline .contain.right::after {
+        content: none;
+    }
+    .timeline .content * {
+        font-size: 14px;
+    }
+
+    center * {
+        font-size: 14px;
+    }
+
+    .hd-title h1 {
+        letter-spacing: 3px;
+        font-size: 2.2rem;
+        padding: .5em 0;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .text-resume {
+        font-size: 1.6rem;
+    }
+    .wrap-self-picture img{
+        width: 150px;
+        height: 150px;
+        margin-top: -76px !important;
     }
 }

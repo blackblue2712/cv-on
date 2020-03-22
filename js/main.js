@@ -12,9 +12,11 @@ window.onscroll = function(e) {
     let scrollY = window.scrollY;
     if(scrollY > 20) {
         document.querySelector("#scroll-up").style.display = "block";
+        document.querySelector("#tab-responsive").style.display = "flex";
         document.querySelector(".self-picture").style.display = "block";
     } else {
         document.querySelector("#scroll-up").style.display = "none";
+        document.querySelector("#tab-responsive").style.display = "none";
         document.querySelector(".self-picture").style.display = "none";
     }
     document.querySelector(".background-parallax").style.backgroundPositionY = - (scrollY/2) + "px";
