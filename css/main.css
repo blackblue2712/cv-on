@@ -446,6 +446,9 @@ footer a:hover i {
     }
 }
 @media screen and (max-width: 428px) {
+    .container {
+        margin: 0 !important;
+    }
     .text-resume {
         font-size: 2rem;
     }
