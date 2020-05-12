@@ -319,7 +319,7 @@ header .container {
 }
 .timeline .content div li span{
     font-weight: bold;
-    font-style: italic;
+    /* font-style: italic; */
 }
 .timeline .content div li a{
     color: #00A7C5 !important
