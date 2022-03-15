@@ -41,27 +41,27 @@
 
 @media (max-width: 520px) {
   .what-can-do-block .desktop {
-    display: none;
+    display: none !important;
   }
 
   .what-can-do-block .mobile {
-    display: table;
+    display: table !important;
   }
 
   .what-can-do-block img.mobile {
-    width: 100%;
+    width: 100% !important;
   }
 
   .what-can-do-block .wrapper-break {
-    max-width: 328px;
+    max-width: 328px !important;
   }
 
   .what-can-do-block .receipt {
-    height: 428px;
+    height: 428px !important;
   }
 
   .what-can-do-block .what-can-you-do {
-    height: 831px;
+    height: 831px !important;
   }
 }
 
