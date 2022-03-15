@@ -1,0 +1,75 @@
+.what-can-do-block * {
+  color: #697179;
+  font-family: "Roboto", Arial, sans-serif !important;
+}
+
+.what-can-do-block .wrapper {
+  background-color: #ebeef0;
+}
+
+.what-can-do-block .wrapper-break {
+  max-width: 800px;
+}
+
+.what-can-do-block p {
+  font-size: 14px;
+}
+
+.what-can-do-block .button {
+  height: 32px;
+  cursor: pointer;
+
+  font-size: 14px;
+}
+
+.what-can-do-block .mobile {
+  display: none;
+}
+
+.what-can-do-block td {
+  word-break: break-word;
+}
+
+.what-can-do-block .receipt {
+  height: 279px;
+}
+
+.what-can-do-block .what-can-you-do {
+  height: 379px;
+}
+
+.what-can-do-block .white {
+  background-color: #ffffff;
+}
+
+@media only screen and (max-width: 520px) {
+  .what-can-do-block .desktop {
+    display: none;
+  }
+
+  .what-can-do-block .mobile {
+    display: table;
+  }
+
+  .what-can-do-block img.mobile {
+    width: 100%;
+  }
+
+  .what-can-do-block .wrapper-break {
+    max-width: 328px;
+  }
+
+  .what-can-do-block .receipt {
+    height: 428px;
+  }
+
+  .what-can-do-block .what-can-you-do {
+    height: 831px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .what-can-do-block .white {
+    background-color: #ffffff;
+  }
+}
