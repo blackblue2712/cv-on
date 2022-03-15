@@ -1,7 +1,4 @@
-.what-can-do-block * {
-  color: #697179;
-  font-family: "Roboto", Arial, sans-serif !important;
-}
+
 
 .what-can-do-block .wrapper {
   background-color: #ebeef0;
@@ -42,7 +39,7 @@
   background-color: #ffffff;
 }
 
-@media only screen and (max-width: 520px) {
+@media (max-width: 520px) {
   .what-can-do-block .desktop {
     display: none;
   }
